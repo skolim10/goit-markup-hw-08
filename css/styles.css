@@ -94,6 +94,7 @@
 }
 .address {
   margin-top: 20px;
+  font: var(--main-font);
 }
 .nav-menu a:hover,
 .nav-menu a:focus,
