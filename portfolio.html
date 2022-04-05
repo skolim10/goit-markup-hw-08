@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -16,25 +20,35 @@
   <body>
     <!-- Nagłówek -->
     <header class="header">
-      <a href="#" class="logo"><span class="logo-begin">Web</span>Studio</a>
-      <div>
-        <nav>
-          <ul class="menu">
-            <li><a href="./index.html">Agencja</a></li>
-            <li><a href="./portfolio.html">Portfolio</a></li>
-            <li><a href="./kontakt">Kontakt</a></li>
+      <div class="container">
+        <a href="#" class="logo"><span class="logo-begin">Web</span>Studio</a>
+        <nav class="navigation">
+          <ul class="nav-menu">
+            <li class="nav-menu-item">
+              <a class="nav-menu-item-link" href="./index.html">Agencja</a>
+            </li>
+            <li class="nav-menu-item">
+              <a class="nav-menu-item-link" href="./portfolio.html"
+                >Portfolio</a
+              >
+            </li>
+            <li class="nav-menu-item">
+              <a class="nav-menu-item-link" href="./kontakt">Kontakt</a>
+            </li>
           </ul>
         </nav>
         <div class="contact">
-          <a href="mailto:info@devstudio.com">info@mdevstudio.com</a>
-          <a href="tel:+48111111111">+48 111-111-111</a>
+          <a class="contact-link" href="mailto:info@devstudio.com"
+            >info@mdevstudio.com</a
+          >
+          <a class="contact-link" href="tel:+48111111111">+48 111-111-111</a>
         </div>
       </div>
     </header>
     <!-- Strona -->
     <main>
-      <section class="portfolio-button">
-        <ul>
+      <section class="portfolio-nav">
+        <ul class="portfolio-button">
           <li><button type="button">Wszystkie</button></li>
           <li><button type="button">Strony</button></li>
           <li><button type="button">Aplikacje</button></li>
@@ -42,9 +56,9 @@
           <li><button type="button">Marketing</button></li>
         </ul>
       </section>
-      <section>
-        <ul>
-          <li>
+      <section class="container">
+        <ul class="portfolio-content">
+          <li class="portfolio-content-list">
             <figure>
               <img
                 src="./images/por1.jpg"
@@ -58,7 +72,7 @@
               </figcaption>
             </figure>
           </li>
-          <li>
+          <li class="portfolio-content-list">
             <figure>
               <img
                 src="./images/por2.jpg"
@@ -72,7 +86,7 @@
               </figcaption>
             </figure>
           </li>
-          <li>
+          <li class="portfolio-content-list">
             <figure>
               <img
                 src="./images/por3.jpg"
@@ -86,7 +100,7 @@
               </figcaption>
             </figure>
           </li>
-          <li>
+          <li class="portfolio-content-list">
             <figure>
               <img
                 src="./images/por4.jpg"
@@ -100,7 +114,7 @@
               </figcaption>
             </figure>
           </li>
-          <li>
+          <li class="portfolio-content-list">
             <figure>
               <img
                 src="./images/por5.jpg"
@@ -114,7 +128,7 @@
               </figcaption>
             </figure>
           </li>
-          <li>
+          <li class="portfolio-content-list">
             <figure>
               <img
                 src="./images/por6.jpg"
@@ -128,7 +142,7 @@
               </figcaption>
             </figure>
           </li>
-          <li>
+          <li class="portfolio-content-list">
             <figure>
               <img
                 src="./images/por7.jpg"
@@ -142,7 +156,7 @@
               </figcaption>
             </figure>
           </li>
-          <li>
+          <li class="portfolio-content-list">
             <figure>
               <img
                 src="./images/por8.jpg"
@@ -156,7 +170,7 @@
               </figcaption>
             </figure>
           </li>
-          <li>
+          <li class="portfolio-content-list">
             <figure>
               <img
                 src="./images/por9.jpg"
@@ -175,12 +189,18 @@
     </main>
     <!-- Stopka -->
     <footer class="footer">
-      <a href="#" class="logo"><span class="logo-begin">Web</span>Studio</a>
-      <address>m. Warszawa, Aleje Jerozolimskie 21</address>
-      <ul>
-        <li><a href="mailto:info@devstudio.com">info@mdevstudio.com</a></li>
-        <li><a href="tel:+48111111111">+48 111-111-111</a></li>
-      </ul>
+      <div class="container">
+        <a href="#" class="logo"><span class="logo-begin">Web</span>Studio</a>
+        <address class="address">m. Warszawa, Aleje Jerozolimskie 21</address>
+        <ul>
+          <li class="contact-link">
+            <a href="mailto:info@devstudio.com">info@mdevstudio.com</a>
+          </li>
+          <li class="contact-link">
+            <a href="tel:+48111111111">+48 111-111-111</a>
+          </li>
+        </ul>
+      </div>
     </footer>
   </body>
 </html>
