@@ -65,7 +65,10 @@
 .header-info {
   height: 600px;
   width: auto;
-  background-color: var(--head-foot-bg);
+  background: var(--head-foot-bg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Img-team.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
   color: var(--main-bg);
   text-align: center;
   font-weight: 900;
@@ -116,6 +119,16 @@
   padding: 10px 41px 10px 42px;
   margin-top: 30px;
 }
+.icon {
+    width: 270px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--portfolio-buttons-bg);
+    border-radius: 4px;
+    margin-bottom: 30px; }
+
 .news {
   margin-top: 94px;
 }
