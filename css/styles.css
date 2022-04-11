@@ -67,7 +67,7 @@
   width: auto;
   background: var(--head-foot-bg);
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Img-team.jpg);
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   color: var(--main-bg);
   text-align: center;
@@ -167,6 +167,36 @@
   margin-top: 10px;
   margin-bottom: 30px;
 }
+.customers-list {  
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 94px;
+}
+.customers-list-item {
+  width: 170px;
+  height: 92px;  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--main-bg);
+  border: 1px solid #AFB1B8;
+  border-radius: 4px;
+  fill: #afb1b8;
+}
+.customers-list-item-box {
+
+}
+.customers-list-item:not(:last-child){
+  margin-right: 30px;
+}
+.customers-list-item:hover,
+.customers-list-item:focus {
+  border: 1px solid var(--blue-elements);
+  fill: var(--blue-elements);
+  cursor: pointer;
+} 
 .portfolio-nav {
   margin-top: 94px;
   margin-bottom: 50px;
@@ -228,7 +258,20 @@
   line-height: 1.875;
 }
 .contact {
-  display: flex;
+  /* display: flex; */
+  display: inline;
+  align-items: center;
+  justify-content: center;
+  fill: var(--grey-elements)
+}
+.contact-icon {
+  display: inline;
+  margin-right: 10px;
+  fill: var(--grey-elements);
+}
+.contact-icon:hover,
+.contact-icon:focus {
+  fill: var(--blue-elements);
 }
 .contact-link {
   color: var(--grey-elements);
@@ -244,6 +287,10 @@
 .contact a:focus {
   color: var(--button-hover-bg);
   text-decoration: none;
+}
+.contact:hover,
+.contact:focus {
+  fill: var(--blue-elements);
 }
 .motto {
   font-size: 44px;
