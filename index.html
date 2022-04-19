@@ -21,7 +21,7 @@
         <a href="#" class="logo"><span class="logo-begin">Web</span>Studio</a>
         <nav class="navigation">
           <ul class="nav-menu">
-            <li class="nav-menu-item">Agencja</li>
+            <li class="nav-menu-item"><a class="nav-menu-item-link" href="./index.html">Agencja</a></li>
             <li class="nav-menu-item"><a class="nav-menu-item-link" href="./portfolio.html">Portfolio</a></li>
             <li class="nav-menu-item"><a class="nav-menu-item-link" href="./kontakt">Kontakt</a></li>
           </ul>
@@ -47,7 +47,7 @@
     <main>
       <div class="header-info">
         <h1 class="motto">EFEKTYWNE ROZWIĄZANIA <br />DLA WASZEGO BIZNESU</h1>
-        <button type="button" class="main-button">Zamów usługe</button>
+        <button type="button" class="main-button" data-modal-open>Zamów usługe</button>
       </div>
       <section class="news">
       <div class="container">
@@ -112,17 +112,23 @@
           src="images/img1.jpg"
           alt="praca nad interfejsem mobilnym"
           width="370"
-          height="294"/></li>
+          height="294"/>
+          <p class="about-label">aplikacje komputerowe</p>
+          </li>
           <li class="about-item"><img
           src="images/img2.jpg"
           alt="praca nad interfejsem mobilnym"
           width="370"
-          height="294"/></li>
+          height="294"/>
+          <p class="about-label">aplikacje mobilne</p>  
+          </li>
           <li class="about-item"><img
           src="images/img3.jpg"
           alt="praca nad interfejsem mobilnym"
           width="370"
-          height="294"/></li>
+          height="294"/>
+          <p class="about-label">rozwiązania graficzne</p>   
+          </li>
         </ul>
         </div>
       </section>
@@ -410,5 +416,15 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="close-btn" data-modal-close>
+          <svg class="close-x">
+            <use href="./images/icons.svg#close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
