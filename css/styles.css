@@ -68,6 +68,7 @@
   width: auto;
   background: var(--head-foot-bg);
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Img-team.jpg);
+  max-width: 1600px;
   background-size: cover;
   background-repeat: no-repeat;
   color: var(--main-bg);
@@ -212,9 +213,9 @@
   border-radius: 4px;
   fill: var(--customers-logos);
 }
-.customers-list-item-box {
+/* .customers-list-item-box {
 
-}
+} */
 .customers-list-item:not(:last-child){
   margin-right: 30px;
 }
@@ -291,12 +292,12 @@
   color: var(--grey-elements);
   line-height: 1.875;
 }
-.contact {
-  /* display: flex;
+/* .contact {
+  display: flex;
   align-items: center;
-  justify-content: space-between; */
-  /* fill: var(--grey-elements) */
-}
+  justify-content: space-between; 
+  fill: var(--grey-elements) 
+} */
 .contact-list {
     display: flex;
     align-items:center;
