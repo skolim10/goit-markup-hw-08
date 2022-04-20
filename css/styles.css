@@ -97,6 +97,7 @@
   max-width: 1600px;
   background-size: cover;
   background-repeat: no-repeat;
+  margin: 0 auto;
   color: var(--main-bg);
   text-align: center;
   font-weight: 900;
