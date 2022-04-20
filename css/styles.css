@@ -47,6 +47,18 @@
 .logo-begin {
   color: var(--blue-elements);
 }
+.nav-menu-item-link,
+.contact-link, 
+{
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.social-list-link,
+.portfolio-button button,
+.customers-list-item
+ {
+  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 .navigation {
     display: flex;
     align-items: center;
@@ -56,7 +68,6 @@
   font: var(--main-font);
   font-weight: 500;
   font-size: 14px;
-  position: relative;
 }
 .nav-menu-item-link {
   text-decoration: none;
@@ -68,7 +79,7 @@
 .nav-menu-item {
   position: relative;
 }
-.nav-menu-item-link::after {
+.current .nav-menu-item-link::after {
   position: absolute;
   content: "";
   display: block;
@@ -201,8 +212,7 @@
   height: 44px;
   background-color: var(--main-bg);
   border-radius: 50%;
-  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  /* transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
+  /* transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1); */
 }
 .social-list-link:hover,
 .social-list-link:focus {
@@ -229,11 +239,8 @@
   border: 1px solid var(--customers-logos);
   border-radius: 4px;
   fill: var(--customers-logos);
-  transition: all 250ms linear;
+  /* transition: all 250ms linear; */
 }
-/* .customers-list-item-box {
-
-} */
 .customers-list-item:not(:last-child){
   margin-right: 30px;
 }
@@ -277,17 +284,18 @@
   margin-bottom: 94px;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+}
+.portfolio-content-list li{
+  margin-left: 0;
+  flex-basis: calc(100%/3);
 }
 .portfolio-content-list {
-  margin-left: 0;
   margin-bottom: 30px;
-  flex-basis: calc(100%/3);
-  /* transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1); */
 }
 .portfolio-content-list figcaption {
   padding: 20px 24px;
   width: 370px;
-  z-index: 1;
 }
 .portfolio-content-list figure {
   border: 1px solid var(--menu-line);
@@ -406,7 +414,6 @@
 }
 .team {
   background-color: var(--portfolio-buttons-bg);
-  /* margin-top: 94px; */
 }
 .team-list {
   display: flex;
