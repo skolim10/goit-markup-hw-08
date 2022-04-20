@@ -487,8 +487,8 @@ margin-top: 10px;
 }
 .social-list-link,
 .customers-list-item,
-.social-list-item li,
-.social-footer-list .social-list-link {
+.social-list li,
+.social-list-item .social-list-link {
   transition: background-color, fill 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
