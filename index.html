@@ -423,6 +423,27 @@
             <use href="./images/icons.svg#close"></use>
           </svg>
         </button>
+        <form name="signup-form" class="signup-form">
+          <p class="form-head">Zostaw swoje dane w formularzu poniżej</p>
+          <label class="form-name">Imie
+            <input type="text" name="username" />
+          </label>
+          <label class="form-phone">Telefon
+            <input type="tel" name="phone_number" />
+          </label>
+          <label class="form-email">Email
+            <input type="email" name="email" />
+          </label>
+          <label class="form-feedback">Komentarz
+            <textarea name="feedback" placeholder="Wprowadź tekst"></textarea>
+          </label>
+          <div class="agree-submit">
+            <label class="form-agreement">
+              <input type="checkbox" name="agreement" value="agree" />Oświadczam iż akceptuję <a href="#">Regulamin </a>i <a href="#">Politykę Prywatności.</a>
+            </label>
+          <button class="form-btn" type="submit">Wyślij</button>
+          </div>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
