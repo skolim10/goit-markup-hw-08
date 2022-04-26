@@ -528,6 +528,7 @@ label {
 textarea {
   resize: none;
   height: 120px;
+  color: rgba(117, 117, 117, 0.5);
 }
 .signup-form {
   display: flex;
@@ -553,7 +554,7 @@ form .form-feedback {
   line-height: 1.172;
   margin-top: 10px;
   padding-bottom: 4px;
-
+  color: var(--grey-elements);
 }
 .form-name input,
 .form-phone input,
