@@ -446,12 +446,13 @@
           <label class="form-feedback">Komentarz
             <textarea name="feedback" placeholder="Wprowadź tekst"></textarea>
           </label>  
-          <input class="modal-form-policy" id="user-policy" type="checkbox" name="policy"/>
-          <label for="user-policy" class="modal-form-policy-txt">Oświadczam iż akceptuję <a class="form-agreement-link" href="#">Regulamin </a>i <a class="form-agreement-link" href="#">Politykę Prywatności.</a></label>
           <div class="agree-submit">
-            <label class="form-agreement">
+          <input class="modal-form-policy visually-hidden" id="user-policy" type="checkbox" name="policy"/>
+          <label for="user-policy" class="modal-form-policy-txt">Oświadczam iż akceptuję <a class="form-agreement-link" href="#">Regulamin </a>i <a class="form-agreement-link" href="#">Politykę Prywatności.</a></label>
+          
+            <!-- <label class="form-agreement">
               <input type="checkbox" name="agreement" value="agree" class="form-agreement-txt"/>Oświadczam iż akceptuję <a class="form-agreement-link" href="#">Regulamin </a>i <a class="form-agreement-link" href="#">Politykę Prywatności.</a>
-            </label>
+            </label> -->
           <button class="form-btn" type="submit">Wyślij</button>
           </div>
         </form>

@@ -608,17 +608,20 @@ form .form-feedback {
   flex-direction: column;
   align-items: center;
 }
-.form-agreement {
+/* .modal-form-policy {
+
+} */
+.modal-form-policy-txt {
   display: inline;
   font-size: 14px;
   line-height: 1.714;
   letter-spacing: 0.03em;
   color: var(--grey-elements);
 }
-.form-agreement input {
+.modal-form-policy-txt input {
   margin-right: 8px;
 }
-.form-agreement a {
+.modal-form-policy-txt a {
   font-size: 14px;
   line-height: 1.714;
   letter-spacing: 0.03em;
@@ -626,22 +629,30 @@ form .form-feedback {
 }
 .modal-form-policy-txt::before {
   content: "";
-  display: block;
+  display: inline-block;
+  margin-right: 7px;
+  top: 1px;
   width: 16px;
   height: 15px;
   border: 1px solid var(--main-text);
 }
 .modal-form-policy:checked + .modal-form-policy-txt::before {
   background-color: var(--blue-elements);
-  border: none;
-  background-image: url("../images/icons.svg#checked");
+  border: 1px solid var(--main-bg);
+  border-radius: 2px;
+  background-image: url("../images/checked.svg");
+  background-repeat: no-repeat;
+  background-position: 1px;
 }
-.form-agreement-txt::before {
-  content: "";
-  display: block;
-  width: 16px;
-  height: 15px;
-  border: 1px solid var(--main-text);
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
 }
 .signup-form button {
   background-color: var(--blue-elements);
