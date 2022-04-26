@@ -524,6 +524,20 @@ label {
   display: flex;
   flex-direction: column;
   align-content: center;
+  /* position: relative; */
+}
+.form-phone,
+.form-name,
+.form-email {
+  position: relative;
+}
+.form-phone .form-icon,
+.form-name .form-icon,
+.form-email .form-icon {
+  position: absolute;
+  top: 50%;
+  left: 14px;
+  /* transform: translateY(-20%); */
 }
 textarea {
   resize: none;
@@ -563,7 +577,18 @@ form .form-feedback {
   margin-top: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  padding-left: 42px;
 }  
+.form-name input:focus,
+.form-phone input:focus,
+.form-email input:focus,
+.form-feedback textarea:focus {
+  outline: none;
+  border: 1px solid var(--blue-elements);
+  box-sizing: border-box;
+  border-radius: 4px;
+  fill: var(--blue-elements);
+}
 .form-name input,
 .form-phone input,
 .form-email input {
@@ -598,6 +623,25 @@ form .form-feedback {
   line-height: 1.714;
   letter-spacing: 0.03em;
   color: var(--blue-elements);
+}
+.modal-form-policy-txt::before {
+  content: "";
+  display: block;
+  width: 16px;
+  height: 15px;
+  border: 1px solid var(--main-text);
+}
+.modal-form-policy:checked + .modal-form-policy-txt::before {
+  background-color: var(--blue-elements);
+  border: none;
+  background-image: url("../images/icons.svg#checked");
+}
+.form-agreement-txt::before {
+  content: "";
+  display: block;
+  width: 16px;
+  height: 15px;
+  border: 1px solid var(--main-text);
 }
 .signup-form button {
   background-color: var(--blue-elements);
