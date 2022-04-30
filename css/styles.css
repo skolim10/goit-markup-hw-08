@@ -457,24 +457,24 @@ margin-top: 10px;
   margin-top: 20px;
   font: var(--main-font);
 }
-.social-footer {
+.footer__social{
   margin-left: 70px;
   margin-right: 78px;
 }
-.social-footer-list {
+.footer__social-list {
   display: flex;
   justify-content: center;
   align-items: top;
 }
-.social-footer-list .social-list__link {
+.footer__social-list .social-list__link {
   background-color: rgba(255, 255, 255, 0.1);
   fill: var(--main-bg);
 }
-.social-footer-list li:not(:last-child) {
+.footer__social-list li:not(:last-child) {
   margin-right: 10px;
 }
-.social-footer-list .social-list__link:hover,
-.social-footer-list .social-list__link:focus {
+.footer__social-list .social-list__link:hover,
+.footer__social-list .social-list__link:focus {
   background-color: var(--blue-elements);
   cursor: pointer;
 }
@@ -492,7 +492,7 @@ margin-top: 10px;
   color: var(--button-hover-bg);
   cursor: pointer;
 }
-.newsletter-form-email {
+.newsletter__form-email {
   background: none;
   width: 358px;
   height: 50px;
@@ -502,11 +502,11 @@ margin-top: 10px;
   padding-left: 16px;
   margin-right: 12px;
 }
-.newsletter-form-email:focus {
+.newsletter__form-email:focus {
   color: var(--footer-grey);
   outline: none;
 }
-.newsletter-form-btn {
+.newsletter__form-btn {
   background-color: var(--blue-elements);
   color: var(--main-bg);
   font: var(--main-font);
@@ -518,7 +518,7 @@ margin-top: 10px;
   height: 50px;
   fill: var(--main-bg);
 }
-.newsletter-btn-flex {
+.newsletter__btn-flex {
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -527,7 +527,7 @@ margin-top: 10px;
   line-height: 1.875;
   letter-spacing: 0.06em;
 }
-.newsletter-btn-icon {
+.newsletter__btn-icon {
   margin-left: 24px;
   width: 24px;
   height: 24px;
