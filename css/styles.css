@@ -580,14 +580,14 @@ label {
   align-content: center;
   /* position: relative; */
 }
-.form-phone,
-.form-name,
-.form-email {
+.modal__form-phone,
+.modal__form-name,
+.modal__form-email {
   position: relative;
 }
-.form-phone .form-icon,
-.form-name .form-icon,
-.form-email .form-icon {
+.modal__form-phone .modal__form-icon,
+.modal__form-name .modal__form-icon,
+.modal__form-email .modal__form-icon {
   position: absolute;
   top: 50%;
   left: 14px;
@@ -598,14 +598,14 @@ textarea {
   height: 120px;
   color: rgba(117, 117, 117, 0.5);
 }
-.signup-form {
+.modal__form {
   display: flex;
   flex-direction: column;
   align-content: center;
   margin-left: 40px;
   margin-right: 40px;
 }
-form .form-head {
+form .modal__form-head {
   font-weight: 700;
   font-size: 20px;
   line-height: 1.172 ;
@@ -614,41 +614,41 @@ form .form-head {
   margin-top: 40px;
   margin-bottom: 12px;
 }
-form .form-name,
-form .form-phone,
-form .form-email,
-form .form-feedback {
+form .modal__form-name,
+form .modal__form-phone,
+form .modal__form-email,
+form .modal__form-feedback {
   font-size: 12px;
   line-height: 1.172;
   margin-top: 10px;
   padding-bottom: 4px;
   color: var(--grey-elements);
 }
-.form-name input,
-.form-phone input,
-.form-email input,
-.form-feedback textarea {
+.modal__form-name input,
+.modal__form-phone input,
+.modal__form-email input,
+.modal__form-feedback textarea {
   margin-top: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   padding-left: 42px;
 }  
-.form-name input:focus,
-.form-phone input:focus,
-.form-email input:focus,
-.form-feedback textarea:focus {
+.modal__form-name input:focus,
+.modal__form-phone input:focus,
+.modal__form-email input:focus,
+.modal__form-feedback textarea:focus {
   outline: none;
   border: 1px solid var(--blue-elements);
   box-sizing: border-box;
   border-radius: 4px;
   fill: var(--blue-elements);
 }
-.form-name input,
-.form-phone input,
-.form-email input {
+.modal__form-name input,
+.modal__form-phone input,
+.modal__form-email input {
   height: 40px;
 }
-.form-feedback textarea {
+.modal__form-feedback textarea {
   height: 120px;
   margin-bottom: 20px;
   padding: 12px 16px;
@@ -657,31 +657,28 @@ form .form-feedback {
   line-height: 1.167;
   letter-spacing: 0.01em;
 }
-.agree-submit {
+.modal__form-agreement {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-/* .modal-form-policy {
-
-} */
-.modal-form-policy-txt {
+.modal__form-statement {
   display: inline;
   font-size: 14px;
   line-height: 1.714;
   letter-spacing: 0.03em;
   color: var(--grey-elements);
 }
-.modal-form-policy-txt input {
+.modal__form-statement input {
   margin-right: 8px;
 }
-.modal-form-policy-txt a {
+.modal__form-statement a {
   font-size: 14px;
   line-height: 1.714;
   letter-spacing: 0.03em;
   color: var(--blue-elements);
 }
-.modal-form-policy-txt::before {
+.modal__form-statement::before {
   content: "";
   display: inline-block;
   margin-right: 7px;
@@ -690,7 +687,7 @@ form .form-feedback {
   height: 15px;
   border: 1px solid var(--main-text);
 }
-.modal-form-policy:checked + .modal-form-policy-txt::before {
+.modal__form-policy:checked + .modal__form-statement::before {
   background-color: var(--blue-elements);
   border: 1px solid var(--main-bg);
   border-radius: 2px;
@@ -708,7 +705,7 @@ form .form-feedback {
   width: 1px !important;
   overflow: hidden;
 }
-.signup-form button {
+.modal__form button {
   background-color: var(--blue-elements);
   color: var(--main-bg);
   font: var(--main-font);
@@ -723,13 +720,13 @@ form .form-feedback {
   margin-top: 30px;
   margin-bottom: 40px;
 }
-.close-x {
+.modal__close-x {
   width: 11px;
   height: 11px;
   margin-left: 1px;
   margin-top: 4px;
 }
-.close-btn {
+.modal__close {
   position: absolute;
   align-content: center;
   top: 8px;
