@@ -1,0 +1,32 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 94px;
+}
+.portfolio__menu {
+    margin-top: 94px;
+    /* margin-bottom: 50px; */
+    display: flex;
+    justify-content: center;
+  }
+  ul {
+    list-style-type: none;
+  }
+  figure, li, ul, p, h2 {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    font-family: var(--main-font);
+    font-size: 16px;
+    color: var(--main-text);
+    background-color: var(--main-bg);
+  }

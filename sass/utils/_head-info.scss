@@ -1,0 +1,24 @@
+.head-info {
+    height: 600px;
+    width: auto;
+    background: var(--head-foot-bg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Img-team.jpg);
+    max-width: 1600px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    color: var(--main-bg);
+    text-align: center;
+    font-weight: 900;
+    line-height: 1.36;
+    top: 50%;
+  }
+  .head-info h1 {
+    vertical-align: middle;
+  }
+  .head-info__txt {
+    font-size: 44px;
+    line-height: 1.364;
+    padding-top: 200px;
+    margin: 0;
+  }
