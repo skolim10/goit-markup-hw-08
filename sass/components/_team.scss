@@ -1,9 +1,6 @@
-.news__item:not(:last-child), 
-.about__item:not(:last-child),
 .team__item:not(:last-child) {
   margin-right: 30px;
 }
-/* ======= TEAM ======= */
 .team__background {
   background-color: var(--portfolio-buttons-bg);
 }

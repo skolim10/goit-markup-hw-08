@@ -13,6 +13,8 @@
       border: 1px solid var(--customers-logos);
       border-radius: 4px;
       fill: var(--customers-logos);    
+      transition: background-color, fill 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
       
       &:not(:last-child){
           margin-right: 30px;

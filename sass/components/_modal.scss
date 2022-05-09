@@ -10,12 +10,31 @@
     0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
+    
+    &__close {
+      position: absolute;
+      align-content: center;
+      top: 8px;
+      right: 8px;
+      width: 30px;
+      height: 30px;
+      background-color: var(--main-bg);
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      border-radius: 50%;
+      cursor: pointer;
+
+      &-x {
+        width: 11px;
+        height: 11px;
+        margin-left: 1px;
+        margin-top: 4px;
+      }
+    }
   }
   label {
     display: flex;
     flex-direction: column;
     align-content: center;
-    /* position: relative; */
   }
   .modal__form-phone,
   .modal__form-name,
@@ -28,7 +47,6 @@
     position: absolute;
     top: 50%;
     left: 14px;
-    /* transform: translateY(-20%); */
   }
   textarea {
     resize: none;
@@ -105,24 +123,24 @@
     line-height: 1.714;
     letter-spacing: 0.03em;
     color: var(--grey-elements);
-  }
-  .modal__form-statement input {
-    margin-right: 8px;
-  }
-  .modal__form-statement a {
-    font-size: 14px;
-    line-height: 1.714;
-    letter-spacing: 0.03em;
-    color: var(--blue-elements);
-  }
-  .modal__form-statement::before {
-    content: "";
-    display: inline-block;
-    margin-right: 7px;
-    top: 1px;
-    width: 16px;
-    height: 15px;
-    border: 1px solid var(--main-text);
+    & input {
+      margin-right: 8px;
+    }
+    & a {
+      font-size: 14px;
+      line-height: 1.714;
+      letter-spacing: 0.03em;
+      color: var(--blue-elements);
+    }
+    &::before {
+      content: "";
+      display: inline-block;
+      margin-right: 7px;
+      top: 1px;
+      width: 16px;
+      height: 15px;
+      border: 1px solid var(--main-text);
+    }
   }
   .modal__form-policy:checked + .modal__form-statement::before {
     background-color: var(--blue-elements);
@@ -132,21 +150,4 @@
     background-repeat: no-repeat;
     background-position: 1px;
   }
-  .modal__close-x {
-    width: 11px;
-    height: 11px;
-    margin-left: 1px;
-    margin-top: 4px;
-  }
-  .modal__close {
-    position: absolute;
-    align-content: center;
-    top: 8px;
-    right: 8px;
-    width: 30px;
-    height: 30px;
-    background-color: var(--main-bg);
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: 50%;
-    cursor: pointer;
-  }
+

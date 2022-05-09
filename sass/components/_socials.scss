@@ -15,12 +15,13 @@
     height: 44px;
     background-color: var(--main-bg);
     border-radius: 50%;
-    /* transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1); */
-  }
-  .social-list__link:hover,
-  .social-list__link:focus {
-    background-color: var(--button-hover-bg);
-    fill: var(--main-bg);
+    transition: background-color 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      background-color: var(--button-hover-bg);
+      fill: var(--main-bg);
+    }
   }
   .social-icon {
     width: 40px;

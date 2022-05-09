@@ -8,10 +8,6 @@
     border-radius: 4px;
     margin-bottom: 30px; }
   
-  /* .section {
-  margin-top: 94px;
-  margin-bottom: 94px;
-  } */
   .section .news {
   display: flex;
   justify-content: space-between;
@@ -28,3 +24,6 @@
   line-height: 1.714;
   margin-top: 10px;
   }
+  .news__item:not(:last-child) {
+  margin-right: 30px;
+}
