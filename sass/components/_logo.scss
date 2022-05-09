@@ -5,7 +5,8 @@
     line-height: 1.192;
     text-decoration: none;
     color: var(--main-text);
-  }
-  .logo-begin {
+  
+    &-begin {
     color: var(--blue-elements);
+    }
   }

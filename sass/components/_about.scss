@@ -1,37 +1,39 @@
 .about {
-    display: flex;
-    margin-top: 50px;
+  display: flex;
+  margin-top: 50px;
+  
+  .container & {
+    margin-bottom: 94px;
   }
-  .about__item {
-    justify-content: space-between;
-    margin-bottom: 0;
-    position: relative;
+  
+  &__item {
+  justify-content: space-between;
+  margin-bottom: 0;
+  position: relative; 
+      & img {
+          display: block;
+      }
   }
-  .about__item img{
-    display: block;
+  &__label {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      margin: 0;
+      width: 100%;
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 14px;
+      text-align: center;
+      line-height: 1.143;
+      background-color: var(--label-grey);
+      color: var(--main-bg);
+      height: 70px;
+      padding: 27px 0;
   }
-  .about__label {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    margin: 0;
-    width: 100%;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 14px;
-    text-align: center;
-    line-height: 1.143;
-    background-color: var(--label-grey);
-    color: var(--main-bg);
-    height: 70px;
-    padding: 27px 0;
-  }
+}
   .section__txt {
     font-size: 36px;
     font-weight: 700;
     text-align: center;
     margin-bottom: 50px;
-  }
-  .container .about {
-    margin-bottom: 94px;
   }

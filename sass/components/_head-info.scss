@@ -12,13 +12,15 @@
     font-weight: 900;
     line-height: 1.36;
     top: 50%;
-  }
-  .head-info h1 {
-    vertical-align: middle;
-  }
-  .head-info__txt {
+  
+    & h1 {
+      vertical-align: middle;
+    }
+
+    &__txt {
     font-size: 44px;
     line-height: 1.364;
     padding-top: 200px;
     margin: 0;
+    }
   }
