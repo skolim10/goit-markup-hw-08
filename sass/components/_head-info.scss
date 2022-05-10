@@ -1,4 +1,66 @@
-.head-info {
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .head-info {
+    height: 400px;
+    width: auto;
+    max-width: 480px;    
+    background: var(--head-foot-bg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/header-bg-mobile.jpg);
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    line-height: 1.615;    
+    color: var(--main-bg);
+    text-align: center;
+    font-weight: 900;
+    top: 50%;
+
+    & h1 {
+      vertical-align: middle;
+    }
+
+    &__txt {
+    font-size: 26px;
+    line-height: 1.615;
+    padding-top: 118px;
+    margin: 0;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .head-info {
+    height: 400px;
+    width: auto;  
+    max-width: 768px;  
+    background: var(--head-foot-bg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/header-bg-tablet.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;    
+    margin: 0 auto;
+    line-height: 1.615;    
+    color: var(--main-bg);
+    text-align: center;
+    font-weight: 900;
+    top: 50%;
+
+    & h1 {
+      vertical-align: middle;
+    }
+
+    &__txt {
+    font-size: 26px;
+    line-height: 1.615;
+    padding-top: 118px;
+    margin: 0;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .head-info {
     height: 600px;
     width: auto;
     background: var(--head-foot-bg);
@@ -10,7 +72,7 @@
     color: var(--main-bg);
     text-align: center;
     font-weight: 900;
-    line-height: 1.36;
+    line-height: 1.364;
     top: 50%;
   
     & h1 {
@@ -24,3 +86,20 @@
     margin: 0;
     }
   }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) and (min-device-pixel-ratio: 2), 
+  screen and (min-width: 320px) and (max-width: 767px) and (min-resolution: 192dpi), 
+  screen and (min-width: 320px) and (max-width: 767px) and (min-resolution: 2dppx) {
+  .head-info {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/header-bg-mobile@2x.jpg);
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 192dpi), 
+  screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 2dppx) {
+  .head-info {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/header-bg-tablet@2x.jpg);
+  }  
+}
+
