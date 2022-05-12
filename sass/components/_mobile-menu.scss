@@ -34,7 +34,10 @@
       border: 1px solid var(--main-bg);
       border-radius: 50%;
       cursor: pointer;
-
+      & .modal__close-x {
+        width: 18px;
+        height: 18px;
+      }
       &:hover {
           fill: var(--blue-elements);
       }

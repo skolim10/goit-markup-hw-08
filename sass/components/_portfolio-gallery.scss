@@ -1,3 +1,8 @@
+.portfolio__menu {
+  margin-top: 94px;
+  display: flex;
+  justify-content: center;
+}
 .portfolio__content .container {
     padding-top: 50px;
   }
@@ -68,4 +73,49 @@
     font-weight: 400;
     color: var(--grey-elements);
     line-height: 1.875;
+  }
+
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    .portfolio{
+      &__menu {
+      margin-top: 45px;
+      padding-left: 15px;
+      display: flex;
+      justify-content: center;
+      }
+      &__gallery {
+        margin-bottom: 30px;
+        justify-content: center;
+      }
+      &__gallery-item {
+        & figure,
+        & figcaption {
+          width: 450px;
+        }
+      }
+      &__gallery-box {
+        & p {
+          padding: 77px 24px;
+        }
+      }
+    }
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    .portfolio{
+      &__menu {
+      margin-top: 45px;
+      padding-left: 15px;
+      display: flex;
+      justify-content: center;
+      }
+      &__gallery {
+        margin-bottom: 30px;
+      }
+      &__gallery-item {
+        & figure,
+        & figcaption {
+          width: 354px;
+        }
+      }
+    }
   }

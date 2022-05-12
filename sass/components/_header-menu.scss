@@ -68,6 +68,17 @@ margin-right: 50px;
   align-items: center;
 }
 
+.current .menu__link::after {
+  position: absolute;
+  content: "";
+  display: block;
+  height: 4px;
+  width: 100%;
+  top: 45px;
+  border-radius: 2px;
+  background-color: var(--blue-elements);
+  }
+
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .header {
     padding-top: 16px;
@@ -98,6 +109,9 @@ margin-right: 50px;
   .contact__icon {
     margin-right: 8px;
   }  
+  .current .menu__link::after {
+    top: 50px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .header {
@@ -107,13 +121,4 @@ margin-right: 50px;
 }
 
 
-.current .menu__link::after {
-position: absolute;
-content: "";
-display: block;
-height: 4px;
-width: 100%;
-top: 45px;
-border-radius: 2px;
-background-color: var(--blue-elements);
-}
+
